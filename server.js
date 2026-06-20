@@ -119,6 +119,6 @@ app.get("/download/:session_id/:file_id", (req, res) => {
   res.send(file.buffer);
 });
 
-app.listen(PORT, () => {
-  console.log(`lc-pyodide-interpreter listening on :${PORT}`);
+app.listen(PORT, "::", () => {
+  console.log(`lc-pyodide-interpreter listening on :: port ${PORT}`);
 });
